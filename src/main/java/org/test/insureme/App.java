@@ -35,7 +35,7 @@ public class App
     // open url
     System.out.println("Driver opening up the url in browser");	
     WebDriver driver = new ChromeDriver(chromeOptions);
-    driver.get("http://3.137.145.121:8081/contact.html");	
+    driver.get("http://18.118.29.159:8083/contact.html");	
     
     //invole implicit waits to load the page
     driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
@@ -43,11 +43,11 @@ public class App
     System.out.println("Enter details in the form");
     //enter details
     //input name
-    driver.findElement(By.id("inputName")).sendKeys("Sam");
+    driver.findElement(By.id("inputName")).sendKeys("Raj");
     Thread.sleep(1000);
     driver.findElement(By.id("inputNumber")).sendKeys("999999999");
     Thread.sleep(1000);
-    driver.findElement(By.id("inputMail")).sendKeys("sam@xyz.com");
+    driver.findElement(By.id("inputMail")).sendKeys("raj@xyz.com");
     Thread.sleep(1000);
     driver.findElement(By.id("inputMessage")).sendKeys("Hi, I am interested in insurance");
     Thread.sleep(1000);
@@ -64,7 +64,7 @@ public class App
     
     File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
     
-  //  File destFile = new File("/Users/shubham/Documents/test-reports.jpg");
+  //  File destFile = new File("/Users/dell/Documents/test-reports.jpg");
     File destFile = new File("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
     
     
