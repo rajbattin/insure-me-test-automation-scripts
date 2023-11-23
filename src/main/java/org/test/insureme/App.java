@@ -27,7 +27,7 @@ public class App
     	
     System.out.println("Script Started");	
        //initializing the web driver
-   // System.setProperty("webdriver.chrome.driver", "/Users/shubham/Documents/softwares/chrome-driver/chromedriver");
+   // System.setProperty("webdriver.chrome.driver", "C:\\Users\\dell\\Downloads\\chromedriver-win64\\chromedriver.exe");
     WebDriverManager.chromedriver().setup();
     //setting properties
     ChromeOptions chromeOptions = new ChromeOptions();
